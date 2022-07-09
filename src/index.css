@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.rojito{
+  background-color: #aa1e22;
+}
+.m0-auto{
+  margin: 0 auto;
+}
+
+@layer base {
+  li {
+    @apply p-5 hover:text-red-300;
+  }
+}
