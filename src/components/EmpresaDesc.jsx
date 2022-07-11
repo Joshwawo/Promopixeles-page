@@ -1,25 +1,24 @@
-import React from 'react'
-import TFD from '../img/TFD.jpg'
-import ALIANSA from '../img/ALIANSA.jpg'
-import MODELO from '../img/MODELOINTEGRAL.jpg'
+import TFWebp from '../img/transformacion-digital-800x600.webp'
+import Aliansa from '../img/aliansa-800x600.webp'
+import ModeloIntegral from '../img/modelo-integral-800x600.webp'
 
 const EmpresaDesc = () => {
   return (
-    <div className='flex container mx-auto justify-between gap-10 py-10 mb-56'>
+    <div className='md:flex font-semibold  container mx-auto justify-between gap-10 py-10 mb-56'>
         <div className="s">
-            <img src={TFD} alt="" />
-            <p>Empresa especialista en transformacion digital con enfoque de negocio</p>
+            <img src={TFWebp} alt=" TFD" />
+            <p className='pt-7 pb-20'>Empresa especialista en transformacion digital con enfoque de negocio</p>
         </div>
         <div className="s">
-        <img src={ALIANSA} alt="" />
+        <img src={Aliansa} alt="ALIANSA" />
 
-            <p>Aliazas estratégicas con empresas lideres en tecnologia</p>
+            <p className='pt-7 pb-20'>Aliazas estratégicas con empresas lideres en tecnologia</p>
         </div>
         
         <div className="s">
-        <img src={MODELO} alt="" />
+        <img src={ModeloIntegral} alt="MODELO DE NEGOCIO" />
 
-            <p>Nuestro modelo de negocio es integral</p>
+            <p className='pt-7 pb-20'>Nuestro modelo de negocio es integral</p>
         </div>
     </div>
   )

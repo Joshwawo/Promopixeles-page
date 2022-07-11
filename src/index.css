@@ -1,14 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap");
+body{
+  background-color: white;
+}
 * {
   font-family: "Montserrat", sans-serif;
+  /* background-color: white; */
+  color: black;
 }
+
+/* html{
+  background-color: white;
+} */
 
 .rojito{
   background-color: #aa1e22;
+}
+
+.rojitoNav{
+  color: #aa1e22;
 }
 .m0-auto{
   margin: 0 auto;

@@ -16,29 +16,32 @@ const Navbar = () => {
         <NavLink to="/">
           <img src={img} alt="Logo Promopixeles" />
         </NavLink>
-        <div className="flex items-center">
+        <div className="flex items-center font-bold">
           <ul className="hidden md:flex">
             <li>
               <NavLink
                 to="/"
-                className={({ isActive }) => (isActive ? "text-red-400" : "")}
+                className={({ isActive }) => (isActive ? "rojitoNav" : "")}
               >
                 Home
               </NavLink>
             </li>
-            <NavLink
-              to="productos&servicios"
-              className={({ isActive }) => (isActive ? "text-red-400" : "")}
-            >
-              <li>Productos y Servicios</li>
-            </NavLink>
-            <NavLink
-              to="contacto"
-              className={({ isActive }) => (isActive ? "text-red-400" : "")}
-            >
-              <li>Contacto</li>
-            </NavLink>
-           
+            <li>
+              <NavLink
+                to="productos&servicios"
+                className={({ isActive }) => (isActive ? "rojitoNav" : "")}
+              >
+                Productos y Servicios
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="contacto"
+                className={({ isActive }) => (isActive ? "rojitoNav" : "")}
+              >
+                Contacto
+              </NavLink>
+            </li>
           </ul>
         </div>
 
@@ -50,18 +53,35 @@ const Navbar = () => {
       <ul
         className={!nav ? "hidden" : "absolute bg-white w-full px-8 md:hidden"}
       >
-        <NavLink to="/" onClick={handleClose} className={({ isActive }) => (isActive ? "text-red-400" : "")}>
-          <li className="border-b-2 border-white w-full">Home</li>
+         <li className="border-b-2 border-white w-full">
+        <NavLink
+          to="/"
+          onClick={handleClose}
+          className={({ isActive }) => (isActive ? "text-red-400" : "")}
+        >
+         Home
         </NavLink>
-        <NavLink to="productos&servicios" onClick={handleClose} className={({ isActive }) => (isActive ? "text-red-400" : "")}>
-          <li className="border-b-2 border-white w-full">
+        </li>
+        <li className="border-b-2 border-white w-full">
+        <NavLink
+          to="productos&servicios"
+          onClick={handleClose}
+          className={({ isActive }) => (isActive ? "text-red-400" : "")}
+        >
+          
             Productos y Servicios
-          </li>
+          
         </NavLink>
-        <NavLink to="contacto" onClick={handleClose} className={({ isActive }) => (isActive ? "text-red-400" : "")}>
-          <li className="border-b-2 border-white w-full">Contacto</li>
+        </li>
+        <li className="border-b-2 border-white w-full">
+        <NavLink
+          to="contacto"
+          onClick={handleClose}
+          className={({ isActive }) => (isActive ? "text-red-400" : "")}
+        >
+          Contacto
         </NavLink>
-        
+        </li>
       </ul>
     </div>
   );
