@@ -5,8 +5,8 @@ import cashless from "../img/cashless.webp";
 const Carrusel = () => {
   return (
     <div className="bg-black ">
-      <div className="carousel w-full bg-black pb-10  container m-auto">
-        <div id="slide1" className="carousel-item relative w-full pt-20 pb-20">
+      <div className="carousel w-full bg-black pb-10 container m-auto">
+        <div id="slide1" className="carousel-item relative w-full pt-14  pb-20">
           <img src={codikash} className="m-auto" alt="Codikash App" />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide2" className="btn btn-circle   ">
@@ -21,7 +21,7 @@ const Carrusel = () => {
             </a>
           </div>
         </div>
-        <div id="slide2" className="carousel-item relative w-full pt-20">
+        <div id="slide2" className="carousel-item relative w-full pt-14">
           <img src={cashless} className="m-auto" alt="cashless app" />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" className="btn btn-circle ">

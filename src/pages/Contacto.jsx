@@ -1,8 +1,14 @@
 import React from 'react'
+import Y from '../components/Y'
 
 const Contacto = () => {
   return (
-    <div className='py-24 bg-orange-400'>Hola desde la pagina de Contacto</div>
+   <>
+      <Y />
+      <div className="">
+        <p>Hola desde contactos</p>
+      </div>
+   </>
   )
 }
 
