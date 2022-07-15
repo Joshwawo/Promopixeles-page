@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -36,8 +36,24 @@ body{
 .rojitoNav{
   color: #aa1e22;
 }
+
+.oscuro{
+  color: #323232;
+}
+
+.amarillo{
+  background-color:  #e3c330;
+}
+
 .m0-auto{
   margin: 0 auto;
+}
+
+
+
+
+.mb10{
+  margin-bottom: 10px;
 }
 
 @layer base {
